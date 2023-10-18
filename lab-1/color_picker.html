@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="color_picker.css"/>
+
+<h2>Color Picker</h2>
+<div class="coord">
+    <div class="RGB">
+        <p><label for="R"> R </label>
+            <input type="range" step="1" id="RR" name="R" min="0" max="255" size="18">
+            <input type="number" id="R" name="R" min="0" max="255" size="18"/>
+        </p>
+        <p><label for="G"> G </label>
+            <input type="range" step="1" id="GR" name="G" min="0" max="255" size="18" maxlength="11">
+            <input type="number" id="G" name="G" min="0" max="255" size="18" maxlength="11"/>
+        </p>
+        <p><label for="B"> B </label>
+            <input type="range" step="1" id="BR" name="B" min="0" max="255" size="18" maxlength="11">
+            <input type="number" id="B" name="B" min="0" max="255" size="18" maxlength="11"/></p>
+    </div>
+
+    <div class="CMYK">
+        <p><label for="C"> C </label>
+            <input type="range" step="0.01" id="CR" name="C" min="0" max="1" size="18">
+            <input type="number" id="C" name="C" size="18"/></p>
+        <p><label for="M"> M </label>
+            <input type="range" step="0.01" id="MR" name="M" min="0" max="1" size="18">
+            <input type="number" id="M" name="M" size="18" maxlength="11"/></p>
+        <p><label for="Y"> Y </label>
+            <input type="range" step="0.01" id="YR" name="Y" min="0" max="1" size="18">
+            <input type="number" id="Y" name="Y" size="18" maxlength="11"/></p>
+        <p><label for="K"> K </label>
+            <input type="range" step="0.01" id="KR" name="K" min="0" max="1" size="18">
+            <input type="number" id="K" name="K" size="18" maxlength="11"/></p>
+    </div>
+
+    <div class="HSV">
+        <p><label for="H"> H </label>
+            <input type="range" step="0.01" id="HR" name="H" min="0" max="360" size="18">
+            <input type="number" id="H" name="H" size="18"/></p>
+        <p><label for="S"> S </label>
+            <input type="range" step="0.01" id="SR" name="S" min="0" max="1" size="18">
+            <input type="number" id="S" name="S" size="18" maxlength="11"/></p>
+        <p><label for="V"> V </label>
+            <input type="range" step="0.01" id="VR" name="V" min="0" max="1" size="18">
+            <input type="number" id="V" name="V" size="18" maxlength="11"/></p>
+    </div>
+</div>
+
+<div class="container">
+    <canvas id="color-picker"></canvas>
+    <div class="info">
+        <h3>Selected Color</h3>
+        <div class="selected"></div>
+    </div>
+</div>
+
+<script src="color_picker.js"></script>
